@@ -37,7 +37,7 @@ title: NeuroBite
 <div class="section">
   <div class="section-title">关于 NeuroBite</div>
   <div class="intro-text">
-    <strong>NeuroBite</strong> 聚焦神经科学与人工智能交叉领域的前沿论文，每篇使用统一分析框架呈现核心结论、方法主线、创新贡献与局限，帮你快速判断是否值得精读。<br><br>
+    <strong>NeuroBite</strong> 聚焦神经科学与人工智能交叉领域的前沿论文，提炼核心结论、方法主线、创新贡献与局限，让你一眼把握最新进展。<br><br>
     在这里，我们不追求信息量，而追求<strong>认知效率</strong>。每一篇笔记都是一次对知识边界的勘探。<br><br>
     本站由 <span style="color: var(--bili); font-weight: 500;">天天拿大熊@B站</span> 策划与维护，内容同步更新于 Bilibili 与 GitHub。
   </div>
