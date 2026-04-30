@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="post-container">
+  <article>
+    <header class="post-header">
+      <div class="post-meta">
+        {% assign is_interview = page.content_type == 'interview' %}
+        {% if is_interview or page.venue %}
+        <span class="cat-badge">{% if is_interview %}Interview{% endif %}{% if is_interview and page.venue %} / {% endif %}{% if page.venue %}{{ page.venue }}{% endif %}</span>
+        <span class="sep">/</span>
+        {% endif %}
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      </div>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+      {% endif %}
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">分享</span>
+      <button class="share-btn" onclick="shareToX()" title="分享到 X">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span>X</span>
+      </button>
+      <button class="share-btn" onclick="copyToClipboard()" title="复制链接，分享到微信">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.032zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/></svg>
+        <span>微信</span>
+      </button>
+      <a href="https://t.bilibili.com/?tab=8" target="_blank" rel="noopener" class="share-btn" title="到 B 站发动态">
+        <svg viewBox="0 0 512 512" width="14" height="14" fill="currentColor"><path d="M488.6 104.1c16.7 18.1 24.4 39.5 23.3 65.5v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 397.5.968 371.7V169.2c-2.009-25.2 7.445-47.4 28.362-66.4l31.17-27.1 61.6-53.7c10.2-8.8 22.5-13.2 36.9-13.2 14.4 0 26.7 4.4 36.9 13.2l20.6 17.9h104l20.6-17.9c10.2-8.8 22.5-13.2 36.9-13.2 14.4 0 26.7 4.4 36.9 13.2l61.6 53.7 31.2 27.1zM390.3 159.1H121.7c-11.3 0-20.5 9.2-20.5 20.5v192.8c0 11.3 9.2 20.5 20.5 20.5h268.6c11.3 0 20.5-9.2 20.5-20.5V179.6c0-11.3-9.2-20.5-20.5-20.5zM221.3 313.6c-11.3 0-20.5-9.2-20.5-20.5v-48.2c0-11.3 9.2-20.5 20.5-20.5 11.3 0 20.5 9.2 20.5 20.5v48.2c0 11.3-9.2 20.5-20.5 20.5zm69.4 0c-11.3 0-20.5-9.2-20.5-20.5v-48.2c0-11.3 9.2-20.5 20.5-20.5 11.3 0 20.5 9.2 20.5 20.5v48.2c0 11.3-9.2 20.5-20.5 20.5z"/></svg>
+        <span>B 站</span>
+      </a>
+      <span class="copy-toast" id="copy-toast">链接已复制</span>
+    </div>
+
+    <script>
+      function shareToX() {
+        var url = encodeURIComponent(window.location.href);
+        var text = encodeURIComponent(document.title);
+        window.open('https://twitter.com/intent/tweet?url=' + url + '&text=' + text, '_blank', 'noopener');
+      }
+      function copyToClipboard() {
+        navigator.clipboard.writeText(window.location.href).then(function() {
+          var toast = document.getElementById('copy-toast');
+          toast.classList.add('show');
+          setTimeout(function() { toast.classList.remove('show'); }, 2000);
+        });
+      }
+    </script>
+  </article>
+</div>

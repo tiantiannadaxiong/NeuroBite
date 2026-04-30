@@ -1,0 +1,644 @@
+:root {
+  --bg: #ffffff;
+  --bg-warm: #fafafa;
+  --text: #1a1a1a;
+  --text-secondary: #444444;
+  --text-muted: #777777;
+  --nature-red: #b31b1b;
+  --border: #e0e0e0;
+  --border-light: #f0f0f0;
+  --link: #b31b1b;
+  --link-hover: #7a1212;
+  --bili: #FB7299;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Serif SC', Georgia, 'Times New Roman', serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(179, 27, 27, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+.site-header {
+  border-top: 5px solid var(--nature-red);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-brand {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.site-nav a {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a:hover {
+  color: var(--nature-red);
+}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 2rem 3.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+  font-family: 'Noto Serif SC', Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.hero .tagline {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+.hero .author-line {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hero .author-line svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--bili);
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 0.65rem 2.2rem;
+  border: 1px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.hero-cta:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+/* ============================================================
+   Sections
+   ============================================================ */
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--nature-red);
+  display: inline-block;
+}
+
+/* ============================================================
+   Paper List — journal article listing
+   ============================================================ */
+.paper-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.paper-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.paper-item:first-child {
+  padding-top: 0;
+}
+
+.paper-item .cat {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--nature-red);
+  margin-bottom: 0.4rem;
+}
+
+.paper-item h3 {
+  font-family: 'Noto Serif SC', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+.paper-item h3 a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.paper-item h3 a:hover {
+  color: var(--nature-red);
+  border-bottom-color: var(--border);
+}
+
+.paper-item .meta {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.paper-item .excerpt {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   Intro
+   ============================================================ */
+.intro-text {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  max-width: 660px;
+}
+
+.intro-text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ============================================================
+   Post Page
+   ============================================================ */
+.post-container {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+.post-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-header h1 {
+  font-family: 'Noto Serif SC', Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.post-meta {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta .cat-badge {
+  color: var(--nature-red);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.72rem;
+}
+
+.post-meta .sep {
+  color: var(--border);
+}
+
+.post-description {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 1.25rem;
+}
+
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--text-secondary);
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  font-family: 'Noto Serif SC', Georgia, serif;
+  color: var(--text);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.post-content h2 {
+  font-size: 1.45rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.post-content h3 {
+  font-size: 1.2rem;
+}
+
+.post-content p {
+  margin-bottom: 1.25rem;
+}
+
+.post-content a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.post-content a:hover {
+  border-bottom-color: var(--link);
+}
+
+.post-content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--nature-red);
+  background: var(--bg-warm);
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.post-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.post-content ul,
+.post-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.post-content li {
+  margin-bottom: 0.4rem;
+}
+
+.post-content code {
+  background: var(--bg-warm);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.88em;
+  color: var(--nature-red);
+}
+
+.post-content pre {
+  background: var(--bg-warm);
+  padding: 1.25rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  border: 1px solid var(--border-light);
+  margin: 1.5rem 0;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+.post-content strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.post-content img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.post-content th,
+.post-content td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.post-content th {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg-warm);
+  border-top: 2px solid var(--text);
+  border-bottom: 2px solid var(--text);
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 3rem 2rem;
+  background: var(--bg-warm);
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.footer-brand {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.footer-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.author-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.82rem;
+  color: var(--bili);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.author-link:hover {
+  opacity: 0.7;
+}
+
+.author-link svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.footer-copyright {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+}
+
+/* ============================================================
+   Share Bar
+   ============================================================ */
+.share-bar {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.share-label {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-right: 0.5rem;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg);
+  color: var(--text-secondary);
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.78rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+  border-color: var(--nature-red);
+  color: var(--nature-red);
+}
+
+.share-btn svg {
+  opacity: 0.7;
+}
+
+.copy-toast {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.75rem;
+  color: var(--nature-red);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.copy-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 768px) {
+  .header-inner {
+    padding: 0.8rem 1.2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .site-nav {
+    gap: 1.2rem;
+  }
+
+  .hero {
+    padding: 3rem 1.2rem 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+
+  .section {
+    padding: 2.5rem 1.2rem;
+  }
+
+  .post-container {
+    padding: 2.5rem 1.2rem 4rem;
+  }
+
+  .post-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .post-content {
+    font-size: 1rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-brand {
+    font-size: 1.25rem;
+  }
+
+  .site-nav a {
+    font-size: 0.75rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .paper-item h3 {
+    font-size: 1.05rem;
+  }
+
+  .post-header h1 {
+    font-size: 1.35rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .post-content h3 {
+    font-size: 1.05rem;
+  }
+}

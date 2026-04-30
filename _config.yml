@@ -1,0 +1,7 @@
+title: NeuroBite
+description: Neuroscience/AI 顶会论文速读
+plugins:
+  - jekyll-feed
+markdown: kramdown
+permalink: /papers/:title
+future: true
