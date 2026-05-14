@@ -13,7 +13,7 @@ layout: default
         {% endif %}
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
         {% if page.pushed_at %}
-        <span class="push-time">· 发布 {{ page.pushed_at | split: "T" | first }} {{ page.pushed_at | split: "T" | last | remove: "Z" | slice: 0, 5 }}</span>
+        <span class="push-time">· 发布 {{ page.pushed_at | truncate: 16, "" | replace: "T", " " }}</span>
         {% endif %}
       </div>
       <h1>{{ page.title }}</h1>

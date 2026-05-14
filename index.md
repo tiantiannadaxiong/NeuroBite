@@ -29,7 +29,7 @@ title: NeuroBite
       <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
       <div class="meta">
         {% if paper.pushed_at %}
-        {{ paper.date | date: "%Y-%m-%d" }} <span class="push-time">· {{ paper.pushed_at | split: "T" | first }} {{ paper.pushed_at | split: "T" | last | remove: "Z" | slice: 0, 5 }}</span>
+        {{ paper.date | date: "%Y-%m-%d" }} <span class="push-time">· {{ paper.pushed_at | truncate: 16, "" | replace: "T", " " }}</span>
         {% else %}
         {{ paper.date | date: "%Y-%m-%d" }}
         {% endif %}
