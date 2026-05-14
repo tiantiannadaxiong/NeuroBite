@@ -2,6 +2,7 @@
 layout: post
 title: "风险重塑杏仁核的决策表征"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Neuron"
 description: "BLA神经元在惩罚风险下动态重组其选择表征，新生编码神经元的比例预测风险回避行为"
 ---

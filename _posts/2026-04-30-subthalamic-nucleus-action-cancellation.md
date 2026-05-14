@@ -2,6 +2,7 @@
 layout: post
 title: "人类丘脑底核神经元通过局部δ频段振荡调控动作取消"
 date: 2026-04-30
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Nature Communications"
 description: "STN神经元与局部δ节律的耦合越强，动作取消能力越差；PD相关的STN爆发式放电通过增强δ耦合损害抑制控制。"
 ---

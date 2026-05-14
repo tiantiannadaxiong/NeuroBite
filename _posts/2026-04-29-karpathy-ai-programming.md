@@ -2,6 +2,7 @@
 layout: post
 title: "Andrej Karpathy × AI 编程范式的代际跃迁"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 content_type: interview
 venue: "Tech Podcast"
 description: "Karpathy认为2025年12月是AI代理真正起飞的拐点，编程范式从写代码转向为代理编写spec，但模型仍是锯齿状幽灵，理解力仍是人类不可外包的瓶颈。"

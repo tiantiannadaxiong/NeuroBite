@@ -2,6 +2,7 @@
 layout: post
 title: "Transformer 天然具有高度简洁性"
 date: 2026-04-28
+pushed_at: 2026-04-30T21:41:41+02:00
 categories: [deep learning theory]
 description: "证明Transformer在表达能力上指数级优于LTL和RNN，双指数级优于有限自动机"
 ---

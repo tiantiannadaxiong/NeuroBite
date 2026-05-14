@@ -2,6 +2,7 @@
 layout: post
 title: "SmartBrain：可穿戴脑PET系统的性能评估"
 date: 2026-04-30
+pushed_at: 2026-05-05T15:07:13+02:00
 venue: "Journal of Nuclear Medicine"
 description: "SmartBrain穿戴式脑PET实现亚2mm空间分辨率、234ps TOF，支持自由运动成像"
 ---

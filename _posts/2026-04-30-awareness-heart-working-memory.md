@@ -2,6 +2,7 @@
 layout: post
 title: "意识作为工作记忆的核心"
 date: 2026-04-30
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Trends in Cognitive Sciences"
 description: "Baddeley团队将情节缓冲器重新概念化为意识缓冲器——工作记忆中多模态、有限容量的意识焦点"
 ---

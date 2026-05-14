@@ -2,6 +2,7 @@
 layout: post
 title: "仿生视觉与生物集成视觉的人工视觉融合"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Nature Reviews Bioengineering"
 description: "系统综述仿生视觉与生物集成视觉两条技术路径的独立进展及其在器件物理与应用层面的融合趋势。"
 ---

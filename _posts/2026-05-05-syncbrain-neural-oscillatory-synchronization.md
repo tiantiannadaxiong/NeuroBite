@@ -2,6 +2,7 @@
 layout: post
 title: "SyncBrain：基于神经振荡同步的脑功能动态建模"
 date: 2026-05-05
+pushed_at: 2026-05-05T06:00:16Z
 venue: "AAAI 2026"
 description: "将Kuramoto振荡器动力学融入深度学习，通过模拟脑区同步化模式实现认知状态解码与疾病诊断"
 ---

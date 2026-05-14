@@ -2,6 +2,7 @@
 layout: post
 title: "以准确率评估大语言模型反向激励幻觉生成"
 date: 2026-05-04
+pushed_at: 2026-05-04T17:23:50Z
 venue: "Nature"
 description: "准确率指标系统性地奖励猜测而惩罚诚实，幻觉本质上是激励机制问题而非模型缺陷"
 ---

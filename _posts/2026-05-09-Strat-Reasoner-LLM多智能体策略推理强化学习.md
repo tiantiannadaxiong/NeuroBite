@@ -2,6 +2,7 @@
 layout: post
 title: "Strat-Reasoner：用强化学习提升LLM在多智能体博弈中的策略推理"
 date: 2026-05-09
+pushed_at: 2026-05-09T22:16:54Z
 venue: "arXiv"
 description: "递归推理+CoT比较+混合优势估计，4B模型匹敌GPT-5"
 ---

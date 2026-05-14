@@ -2,6 +2,7 @@
 layout: post
 title: "智能体AI时代下的综述文章"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Nature Chemical Engineering"
 description: "AI工具可以快速综述文献，但综述文章的核心价值始终在于作者的观点与判断力，而非信息整理本身。"
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "尼安德特人大脑与认知再审视"
 date: 2026-04-27
+pushed_at: 2026-05-06T11:26:50+02:00
 venue: "PNAS"
 description: "尼人脑解剖差异在现代人群变异范围内，预测认知差异仅0.14 SD"
 ---

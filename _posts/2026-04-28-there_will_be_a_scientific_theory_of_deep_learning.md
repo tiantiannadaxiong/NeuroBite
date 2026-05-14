@@ -2,6 +2,7 @@
 layout: post
 title: "深度学习科学理论即将到来"
 date: 2026-04-28
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "arXiv"
 tags: [learning mechanics, deep learning theory, scientific theory, mechanistic interpretability]
 description: "A vision paper arguing a scientific theory of deep learning is emerging."

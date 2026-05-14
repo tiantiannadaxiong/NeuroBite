@@ -16,8 +16,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Backfill pushed_at from git
+        run: |
+          for f in _posts/*.md; do
+            TS=$(git log --follow --format=%cI -1 "$f" 2>/dev/null || true)
+            if [ -n "$TS" ] && ! grep -q "pushed_at:" "$f"; then
+              sed -i "/^date:/a pushed_at: $TS" "$f"
+            fi
+          done
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

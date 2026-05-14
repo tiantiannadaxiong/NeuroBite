@@ -2,6 +2,7 @@
 layout: post
 title: "深度卷积生成对抗网络的无监督表示学习"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "ICLR 2016 / arXiv"
 description: "DCGAN通过一系列架构约束实现稳定训练，证明GAN可学习层次化图像表示并用于下游任务。"
 ---

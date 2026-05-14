@@ -15,7 +15,9 @@ title: NeuroBite
 <div id="papers" class="section">
   <div class="section-title">最新论文</div>
   <div class="paper-list">
-  {% assign papers = site.posts | sort: "date" | reverse %}
+  {% assign with_push = site.posts | where_exp: "p", "p.pushed_at" | sort: "pushed_at" | reverse %}
+  {% assign without_push = site.posts | where_exp: "p", "p.pushed_at == nil" | sort: "date" | reverse %}
+  {% assign papers = with_push | concat: without_push %}
   {% for paper in papers limit: 9 %}
     <article class="paper-item">
       {% assign is_interview = paper.content_type == 'interview' %}
@@ -25,7 +27,13 @@ title: NeuroBite
       </div>
       {% endif %}
       <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
-      <div class="meta">{{ paper.date | date: "%Y-%m-%d" }}</div>
+      <div class="meta">
+        {% if paper.pushed_at %}
+        {{ paper.date | date: "%Y-%m-%d" }} <span class="push-time">· {{ paper.pushed_at | split: "T" | first }} {{ paper.pushed_at | split: "T" | last | remove: "Z" | slice: 0, 5 }}</span>
+        {% else %}
+        {{ paper.date | date: "%Y-%m-%d" }}
+        {% endif %}
+      </div>
       {% if paper.description %}
       <div class="excerpt">{{ paper.description }}</div>
       {% endif %}

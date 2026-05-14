@@ -2,6 +2,7 @@
 layout: post
 title: "智能理论的八大挑战"
 date: 2026-04-30
+pushed_at: 2026-04-30T21:48:26+02:00
 venue: "arXiv"
 description: "用统计力学统一框架理解智能的八个开放性理论挑战"
 ---

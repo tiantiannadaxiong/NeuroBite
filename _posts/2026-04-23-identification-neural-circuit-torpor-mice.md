@@ -2,6 +2,7 @@
 layout: post
 title: "鉴定可实现小鼠安全长期蛰伏的神经环路"
 date: 2026-04-23
+pushed_at: 2026-05-04T19:07:21+02:00
 venue: "bioRxiv"
 description: "发现GCN2+神经元可安全诱导小鼠数周蛰伏，并直接抑制肿瘤生长、增敏化疗"
 ---

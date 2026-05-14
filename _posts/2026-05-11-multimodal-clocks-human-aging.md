@@ -2,6 +2,7 @@
 layout: post
 title: "人类衰老的多模态时钟"
 date: 2026-05-11
+pushed_at: 2026-05-11T11:21:54Z
 venue: "Cell"
 description: "2019人队列构建三层衰老时钟体系，发现凝血因子蓄积是衰老驱动因子"
 tags: [aging, biomarker, multi-omics, coagulation]

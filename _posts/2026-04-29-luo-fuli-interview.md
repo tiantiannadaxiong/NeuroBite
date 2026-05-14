@@ -2,6 +2,7 @@
 layout: post
 title: "罗福莉谈 OpenClaw 冲击与 Agent 范式变革"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 content_type: interview
 venue: "深度访谈"
 tags: [interview, tech]

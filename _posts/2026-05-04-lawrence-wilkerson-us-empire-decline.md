@@ -2,6 +2,7 @@
 layout: post
 title: "Lawrence Wilkerson × 美国帝国黄昏与中美地缘博弈"
 date: 2026-05-04
+pushed_at: 2026-05-04T20:39:36+02:00
 content_type: interview
 venue: "Tucker Carlson Show"
 description: "美前高官指美国轰炸中国一带一路铁路暴露深层战略意图，称帝国存续依赖外部敌人，预测年内全球萧条"

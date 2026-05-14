@@ -2,6 +2,7 @@
 layout: post
 title: "自我知识的概念化、测量、结果与可变性：一项德尔菲共识声明"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Nature Reviews Psychology"
 description: "17位专家通过德尔菲法达成共识：自我知识以领域特异性为主，其益处高度依赖情境，理论上可塑但实践中难以改变。"
 ---

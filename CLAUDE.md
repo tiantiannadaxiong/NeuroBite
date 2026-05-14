@@ -39,6 +39,8 @@ All posts use `layout: post`. Required fields differ by type:
 | `content_type` | — (omit) | `interview` |
 | `description` | One-sentence takeaway ≤50 chars | Same |
 
+> `pushed_at` is automatically managed by the GitHub Actions build pipeline — it reads each post's last git commit time and injects it into front matter at build time. No need to set it manually. List pages sort by `pushed_at` (latest first), with `date` as fallback.
+
 **Never** add `parent`, `nav_order`, or `layout: default` to post front matter — they break rendering.
 
 ## Architecture

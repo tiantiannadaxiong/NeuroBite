@@ -2,6 +2,7 @@
 layout: post
 title: "大规模单峰分辨率电生理学"
 date: 2026-05-08
+pushed_at: 2026-05-08T20:17:32Z
 venue: "Nature Reviews Neuroscience"
 description: "Neuropixels等CMOS电极技术已使常规记录跨脑区数千神经元成为现实，开源生态降低了门槛。"
 ---

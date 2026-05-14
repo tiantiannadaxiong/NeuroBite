@@ -2,6 +2,7 @@
 layout: post
 title: "姚顺宇 × AI 集体主义时代"
 date: 2026-05-10
+pushed_at: 2026-05-11T07:11:45Z
 content_type: interview
 venue: "语言即世界工作室"
 description: "前Anthropic现Gemini研究员：AI不需要脑子，不需要英雄"

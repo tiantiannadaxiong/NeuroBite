@@ -2,6 +2,7 @@
 layout: post
 title: "从蠕虫到人类：大脑仿真的规模化之路"
 date: 2026-4-28
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "MIT Thesis"
 ---
 

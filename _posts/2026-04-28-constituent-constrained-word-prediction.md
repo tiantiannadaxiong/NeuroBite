@@ -2,6 +2,7 @@
 layout: post
 title: "句法成分约束下的语言理解单词预测"
 date: 2026-04-28
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Nature Neuroscience"
 description: "人脑不追求逐词最优预测，而是在句法成分边界处主动牺牲精度换取加工效率。"
 ---

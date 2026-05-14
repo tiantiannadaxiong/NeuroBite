@@ -2,6 +2,7 @@
 layout: post
 title: "Demis Hassabis × AGI 的二十年远征"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 content_type: interview
 venue: "Founders Event"
 description: "DeepMind 创始人回顾二十年 AI 远征：AGI 预计 2030 年到来，AlphaFold 只是 AI 改造科学的开端。"

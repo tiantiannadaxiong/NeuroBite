@@ -2,6 +2,7 @@
 layout: post
 title: "意识复杂性的解构：五大理论辩论"
 date: 2026-04-28
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Neuroscience and Biobehavioral Reviews"
 tags: [consciousness, GNWT, IIT, RPT, HOT, predictive processing]
 description: "Five theories debate consciousness, revealing deep disagreements on definitions and mechanisms."

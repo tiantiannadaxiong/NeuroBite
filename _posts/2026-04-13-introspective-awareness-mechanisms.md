@@ -2,6 +2,7 @@
 layout: post
 title: "内省感知的机制"
 date: 2026-04-13
+pushed_at: 2026-05-07T16:28:42Z
 venue: "arXiv"
 description: "LLM可通过两阶段电路检测注入的操控向量，后训练（DPO）是关键，且该能力被显著低估"
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "Reiner Pope × AI 芯片与推理经济学"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 content_type: interview
 venue: "Dwarkesh Podcast"
 description: "推理成本的本质是内存带宽与计算吞吐的对抗，批量大小、稀疏度和 scale-up 域规模是决定胜负的三个杠杆。"

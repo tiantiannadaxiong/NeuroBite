@@ -242,6 +242,11 @@ body {
   margin-bottom: 0.6rem;
 }
 
+.push-time {
+  font-size: 0.72rem;
+  opacity: 0.7;
+}
+
 .paper-item .excerpt {
   font-size: 0.95rem;
   color: var(--text-secondary);

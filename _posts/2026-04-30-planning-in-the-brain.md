@@ -2,6 +2,7 @@
 layout: post
 title: "大脑中的规划：并非你所想的那样"
 date: 2026-04-30
+pushed_at: 2026-04-30T21:57:15+02:00
 venue: "Annual Review of Neuroscience"
 description: "大脑的规划并非仅仅是决策时刻的前向搜索，而是一类利用心理模拟支撑学习的更广泛计算过程，前向搜索只是其中一个特例。"
 ---

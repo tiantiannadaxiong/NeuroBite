@@ -2,6 +2,7 @@
 layout: post
 title: "在计算机中 4D 模拟基因最小化细胞的完整细胞周期"
 date: 2026-05-09
+pushed_at: 2026-05-09T05:26:00Z
 venue: "Cell"
 description: "首次实现基因最小化细菌 JCVI-syn3A 完整细胞周期的 4D 全细胞空间动力学模拟"
 ---

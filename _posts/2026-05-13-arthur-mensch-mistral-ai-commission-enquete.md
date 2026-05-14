@@ -2,6 +2,7 @@
 layout: post
 title: "Arthur Mensch × L'IA comme ressource naturelle : la souveraineté numérique européenne en jeu"
 date: 2026-05-13
+pushed_at: 2026-05-13T07:19:37Z
 content_type: interview
 venue: "Commission d'enquête parlementaire - Assemblée nationale"
 description: "Mensch alerte : si l'Europe n'investit pas massivement dans l'IA dans les 2 ans, elle perdra son indépendance numérique pour une génération"

@@ -2,6 +2,7 @@
 layout: post
 title: "Carina Hong × AI for Math：从 Putman 满分到数学 ASI"
 date: 2026-04-19
+pushed_at: 2026-05-14T10:33:19Z
 content_type: interview
 venue: "张小珺播客（Xiaojun's Podcast）"
 description: "24岁华人女孩创办Axiom估值16亿刀，AI for Math不只是做题"

@@ -2,6 +2,7 @@
 layout: post
 title: "秀丽隐杆线虫定向转弯的神经序列"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Nature Neuroscience"
 description: "线虫嗅觉导航中，头转向回路按固定序列激活，酪胺作为全局神经调质协调这一序列以实现纠偏转弯"
 ---

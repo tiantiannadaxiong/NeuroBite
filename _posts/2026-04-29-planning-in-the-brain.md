@@ -2,6 +2,7 @@
 layout: post
 title: "脑中的规划：并非你想象的那样"
 date: 2026-04-29
+pushed_at: 2026-04-30T15:15:56+02:00
 venue: "Annual Review of Neuroscience"
 description: "大脑规划不应被狭理解为决策时的前向搜索，而是一类利用心理模拟支持学习的更广泛计算过程。"
 ---

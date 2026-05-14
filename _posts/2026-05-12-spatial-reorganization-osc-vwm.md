@@ -2,6 +2,7 @@
 layout: post
 title: "高级视觉皮层中物体表征的空间重组区分工作记忆与感知"
 date: 2026-05-12
+pushed_at: 2026-05-12T07:32:25Z
 venue: "Science Advances"
 description: "工作记忆期间高级视觉皮层的物体表征突破感知的偏侧化约束，大幅招募同侧半球资源"
 ---

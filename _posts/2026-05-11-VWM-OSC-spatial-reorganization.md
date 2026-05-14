@@ -2,6 +2,7 @@
 layout: post
 title: "视觉工作记忆使高级视觉皮层的物体表征发生空间重组"
 date: 2026-05-11
+pushed_at: 2026-05-11T11:06:00Z
 venue: "Science Advances"
 description: "VWM将OSC中原本对侧偏好的表征扩展到双侧，>90%同侧皮层贡献记忆编码"
 ---

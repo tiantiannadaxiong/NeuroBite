@@ -2,6 +2,7 @@
 layout: post
 title: "350种意识理论揭示的现实本质"
 date: 2026-04-30
+pushed_at: 2026-04-30T21:41:41+02:00
 venue: "New Scientist"
 description: "系统梳理350+种意识理论，揭示理论立场如何决定对自由意志、AI意识与生命延续的根本判断。"
 ---
